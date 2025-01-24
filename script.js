@@ -1,0 +1,10 @@
+$(".shot")
+.on("mouseenter",function(){
+  $(this).addClass("active")
+    .siblings().removeClass("active");
+})
+$(".shots")
+.on("mouseleave",function(){
+  $(".shot.active").removeClass("active")
+  $(".shot").eq(1).addClass("active");
+})
